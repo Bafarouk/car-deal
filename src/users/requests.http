@@ -1,11 +1,27 @@
 ### create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "12345"
+}
+
+### Sign in user
 POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-    "email": "mehdi@mehdi.com",
-    "password": "farouk123"
+    "email": "test@test.com",
+    "password": "12345"
 }
+
+### sign out
+POST http://localhost:3000/auth/signout
+
+### current user
+GET http://localhost:3000/auth/currentuser
+
 
 ### findOne user by id
 GET http://localhost:3000/auth/1
