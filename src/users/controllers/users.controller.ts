@@ -11,15 +11,15 @@ import {
   Session,
   UseGuards,
 } from '@nestjs/common';
-import { CreateUserDto } from './dtos/create-user.dto';
-import { UpdateUserDto } from './dtos/update-user.dto';
-import { UsersService } from './users.service';
-import { Serialize } from '../interceptors/serialize.interceptors';
-import { UserDto } from './dtos/user.dto';
-import { AuthService } from './auth.service';
-import { currentUser } from './decorators/current-user.decorator';
-import { User } from './user.entity';
-import { AuthGuard } from '../guards/auth.guard';
+import { CreateUserDto } from '../dtos/create-user.dto';
+import { UpdateUserDto } from '../dtos/update-user.dto';
+import { UsersService } from '../services/users.service';
+import { Serialize } from '../../interceptors/serialize.interceptors';
+import { UserDto } from '../dtos/user.dto';
+import { AuthService } from '../services/auth.service';
+import { currentUser } from '../decorators/current-user.decorator';
+import { User } from '../entity/user.entity';
+import { AuthGuard } from '../../guards/auth.guard';
 
 @Controller('auth')
 @Serialize(UserDto)
