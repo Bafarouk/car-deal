@@ -19,3 +19,6 @@ Content-Type: application/json
 {
     "approved": true
 }
+
+### get estimated report
+GET http://localhost:3000/reports?model=bmw&make=serie3&year=2013&lat=0&lng=0&mileage=20000
