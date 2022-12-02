@@ -21,4 +21,4 @@ Content-Type: application/json
 }
 
 ### get estimated report
-GET http://localhost:3000/reports?model=bmw&make=serie3&year=2013&lat=0&lng=0&mileage=20000
+GET http://localhost:3000/reports?model=bmw&make=Ford&year=2013&lat=0&lng=0&mileage=20000
